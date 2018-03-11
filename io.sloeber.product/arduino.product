@@ -28,7 +28,7 @@ https://github.com/jantje/arduino-eclipse-plugin/graphs/contributors
 --launcher.appendVmargs
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
--Dlog4j.configuration=log4j/config.xml
+-Dlog4j.configurationFile=log4j/config.xml
 -Dorg.eclipse.update.reconcile=false
 -Xms40m
 -Xmx512m
