@@ -394,22 +394,6 @@ public class Activator extends AbstractUIPlugin {
 	}
 
 	static boolean isPatron() {
-		if (isPatron != null) {
-			return isPatron.booleanValue();
-		}
-		String systemhash = ConfigurationPreferences.getSystemHash();
-
-		try {
-			URL url = new URL(HELP_LOC + "?systemhash=" + systemhash);
-			String content= IOUtils.toString( url);
-			isPatron = new Boolean(content.length() < 200);
-
-		} catch ( Exception e) {
-			//Ignore the download error. This will make the code try again later
-		}
-		if (isPatron != null) {
-			return isPatron.booleanValue();
-		}
-		return false;
+		return true;
 	}
 }
